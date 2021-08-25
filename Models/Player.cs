@@ -7,7 +7,7 @@ namespace AspNetCoreAngularCrudDemo.Models
 {
     public partial class Player
     {
-        public int Id { get; set; }
+        public int Id {     get; set; }
         public int? ShirtNo { get; set; }
         public string Name { get; set; }
         public int? PositionId { get; set; }

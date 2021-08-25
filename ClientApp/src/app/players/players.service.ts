@@ -10,7 +10,7 @@ import { Player } from "./player";
 })
 export class PlayersService {
 
-  private apiURL = "http://localhost:50016/api";
+  private apiURL = "http://localhost:5000/api";
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -35,6 +35,7 @@ export class PlayersService {
   }
 
   createPlayer(player): Observable<Player> {
+    console.log(player);
     return this.httpClient.post<Player>(this.apiURL + '/players/', JSON.stringify(player), this.httpOptions)
       .pipe(
         catchError(this.errorHandler)

@@ -10,7 +10,7 @@ import { Position } from "./position";
 })
 export class PositionsService {
 
-  private apiURL = "http://localhost:50016/api";
+  private apiURL = "http://localhost:5000/api";
   
   constructor(private httpClient: HttpClient) { }
 

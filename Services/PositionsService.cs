@@ -19,9 +19,10 @@ namespace AspNetCoreAngularCrudDemo.Services
 
         public async Task<IEnumerable<Position>> GetPositionsList()
         {
-            return await _context.Positions
+            var list= await _context.Positions
                 .OrderBy(x => x.DisplayOrder)
                 .ToListAsync();
+            return list;
         }
     }
 }
