@@ -41,6 +41,7 @@ namespace AspNetCoreAngularCrudDemo.Services
         {
             _context.Players.Update(player);
             await _context.SaveChangesAsync();
+            //This is Simple
         }
 
         public async Task DeletePlayer(Player player)
